@@ -1,0 +1,2 @@
+ReactDOM.render(<h1>Hi, my name is Jason. This will be my first go at React.</h1>, document.querySelector('#root'));
+ReactDOM.render(<ul><li>Item 1</li><li>Item 2</li></ul>, document.querySelector('#root1'));
