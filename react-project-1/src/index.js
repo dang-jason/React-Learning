@@ -1,32 +1,21 @@
 import React from 'react';
 import ReactDOM from 'react-dom/client';
-import './index.css';
+import './style.css';
 
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
-//very first page written with react
-function PracticePage() {
-  return (
-    <div>
-      <img src="./react-logo.png" width="80px"></img>
-      <h1>Fun facts about react</h1>
-      <ul>
-        <li>Was first released in 2013</li>
-        <li>Was orginially created by Jordan Walke</li>
-        <li>Has well over 100K stars on GIthub</li>
-        <li>Is maintained by Facebook</li>
-        <li>Powers thousands of enterprise apps, including mobile apps</li>
-      </ul>
-    </div>
-  );
-}
 
 //Components and parent/child components composed in page
 function Header(){
   return (
     <header>
-      <nav>
-          <img src="./react-logo.png" width="40px"/>
+      <nav className="nav">
+          <img src="./react-logo.png" className="nav-logo"/>
+          <ul className="nav-items">
+            <li>Pricing</li>
+            <li>About</li>
+            <li>Contact</li>
+          </ul>
       </nav>
     </header>
   );
@@ -34,7 +23,7 @@ function Header(){
 
 function MainContent(){
   return (
-    <div>
+    <div className='main'>
       <h1>Reasons I'm excited to learn React</h1>
       <ol>
           <li>It's a popular library, so I'll be 
@@ -48,7 +37,7 @@ function MainContent(){
 
 function Footer(){
   return (
-    <footer>
+    <footer className='footer'>
       <small>© 2023 Dang development. All rights reserved.</small>
     </footer>
   );
@@ -57,9 +46,9 @@ function Footer(){
 
 function Page() {
     return (
-      <div>
+      <div className="wrapper">
         <Header />
-        <MainContent />
+        <MainContent/>
         <Footer />
       </div>
   )
