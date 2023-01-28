@@ -75,7 +75,7 @@ body {
 	padding-block: 10px;
 }
 
-.main--facts > li::marker{
-	color: #61DAFB;
+.main--facts > li::marker {
+	color: #61dafb;
 	font-size: 1.4rem;
 }
