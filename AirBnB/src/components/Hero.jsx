@@ -1,5 +1,5 @@
 import React from 'react';
-import imggrid from '../images/photo-grid.png';
+import imggrid from '../../public/images/photo-grid.png';
 export default function Hero() {
 	return (
 		<section className="hero">
